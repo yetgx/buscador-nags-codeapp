@@ -1,0 +1,95 @@
+{
+  "appId": "16cef461-7f1c-4957-9ea1-d91408fc456c",
+  "appDisplayName": "Buscador de NAGS CodeApp",
+  "description": "Code App para busqueda y detalle de cristales NAGS",
+  "environmentId": "5a43621c-2078-ea97-b58f-8d454274c30c",
+  "buildPath": "dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:5173",
+  "region": "prod",
+  "connectionReferences": {},
+  "databaseReferences": {
+    "default.cds": {
+      "databaseDetails": null,
+      "dataSources": {
+        "makes": {
+          "entitySetName": "cr169_makes",
+          "logicalName": "cr169_make",
+          "isHidden": false
+        },
+        "make_models": {
+          "entitySetName": "cr169_make_models",
+          "logicalName": "cr169_make_model",
+          "isHidden": false
+        },
+        "vehs": {
+          "entitySetName": "cr169_vehs",
+          "logicalName": "cr169_veh",
+          "isHidden": false
+        },
+        "veh_glasss": {
+          "entitySetName": "cr169_veh_glasses",
+          "logicalName": "cr169_veh_glass",
+          "isHidden": false
+        },
+        "nags_glasss": {
+          "entitySetName": "cr169_nags_glasses",
+          "logicalName": "cr169_nags_glass",
+          "isHidden": false
+        },
+        "nags_glass_dets": {
+          "entitySetName": "cr169_nags_glass_dets",
+          "logicalName": "cr169_nags_glass_det",
+          "isHidden": false
+        },
+        "nags_glass_cfgs": {
+          "entitySetName": "cr169_nags_glass_cfgs",
+          "logicalName": "cr169_nags_glass_cfg",
+          "isHidden": false
+        },
+        "nags_prefixs": {
+          "entitySetName": "cr169_nags_prefixes",
+          "logicalName": "cr169_nags_prefix",
+          "isHidden": false
+        },
+        "veh_modifiers": {
+          "entitySetName": "cr169_veh_modifiers",
+          "logicalName": "cr169_veh_modifier",
+          "isHidden": false
+        },
+        "pricesnagsclients": {
+          "entitySetName": "vv_pricesnagsclients",
+          "logicalName": "vv_pricesnagsclient",
+          "isHidden": false
+        },
+        "quals": {
+          "entitySetName": "vv_quals",
+          "logicalName": "vv_qual",
+          "isHidden": false
+        },
+        "notes": {
+          "entitySetName": "vv_notes",
+          "logicalName": "vv_note",
+          "isHidden": false
+        },
+        "nags_glass_quals": {
+          "entitySetName": "vv_nags_glass_quals",
+          "logicalName": "vv_nags_glass_qual",
+          "isHidden": false
+        },
+        "nags_glass_notes": {
+          "entitySetName": "vv_nags_glass_notes",
+          "logicalName": "vv_nags_glass_note",
+          "isHidden": false
+        },
+        "nags_glass_intchgs": {
+          "entitySetName": "vv_nags_glass_intchgs",
+          "logicalName": "vv_nags_glass_intchg",
+          "isHidden": false
+        }
+      },
+      "actions": null
+    }
+  }
+}

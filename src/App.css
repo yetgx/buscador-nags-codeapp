@@ -1,0 +1,533 @@
+.appShell {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  color: #eaf0ff;
+  background:
+    radial-gradient(900px 520px at 15% 10%, rgba(79, 140, 255, .20), transparent 62%),
+    radial-gradient(900px 520px at 85% 22%, rgba(160, 108, 255, .16), transparent 60%),
+    linear-gradient(180deg, #0b1220, #111c33);
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .075), rgba(255, 255, 255, .045));
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .35);
+  backdrop-filter: blur(18px);
+}
+
+.hero {
+  width: 100%;
+  margin: 0 0 14px;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(360px, 560px);
+  gap: 18px;
+  align-items: end;
+}
+
+.eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 10px;
+  border: 1px solid rgba(79, 140, 255, .25);
+  border-radius: 999px;
+  background: rgba(79, 140, 255, .14);
+  color: rgba(234, 240, 255, .75);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.hero h1 {
+  margin-top: 8px;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.hero p,
+.detailHeader p {
+  margin-top: 8px;
+  color: rgba(234, 240, 255, .70);
+}
+
+.dataStatus {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 999px;
+  background: rgba(8, 12, 24, .28);
+  color: rgba(234, 240, 255, .66);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.searchPanel {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+input,
+select {
+  min-width: 0;
+  width: 100%;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 12px;
+  background: rgba(8, 12, 24, .38);
+  color: #eaf0ff;
+  padding: 0 12px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: rgba(79, 140, 255, .65);
+  box-shadow: 0 0 0 2px rgba(79, 140, 255, .22);
+}
+
+button {
+  font: inherit;
+}
+
+.primaryButton,
+.ghostButton {
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  padding: 0 14px;
+  color: #eaf0ff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primaryButton {
+  border: 0;
+  background: linear-gradient(135deg, rgba(79, 140, 255, .98), rgba(139, 92, 246, .88));
+}
+
+.ghostButton {
+  background: rgba(255, 255, 255, .06);
+}
+
+.chips {
+  width: 100%;
+  margin: 0 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips button,
+.tabs button,
+.pillList span,
+.flagStack span {
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 999px;
+  background: rgba(8, 12, 24, .28);
+  color: rgba(234, 240, 255, .82);
+}
+
+.chips button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.mainGrid {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(340px, 0.88fr) minmax(0, 1.12fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.leftRail,
+.detailPane {
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sectionActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sectionActions button,
+.glassPickerHead button {
+  min-height: 30px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .06);
+  color: rgba(234, 240, 255, .82);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sectionActions button:disabled,
+.glassPickerHead button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.sectionTitle h2 {
+  font-size: 18px;
+}
+
+.sectionTitle span {
+  color: rgba(234, 240, 255, .65);
+  font-size: 12px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.field,
+.glassPicker {
+  display: grid;
+  gap: 6px;
+}
+
+.field span,
+.fieldLabel {
+  color: rgba(234, 240, 255, .72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.glassPicker {
+  margin-top: 14px;
+  justify-items: center;
+}
+
+.glassPickerHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.carSvg {
+  width: min(100%, 360px);
+  height: auto;
+}
+
+.carBody {
+  fill: rgba(255, 255, 255, .055);
+  stroke: rgba(255, 255, 255, .18);
+}
+
+.carBody.side {
+  fill: rgba(255, 255, 255, .035);
+}
+
+.carZone {
+  fill: rgba(255, 255, 255, .08);
+  stroke: rgba(255, 255, 255, .24);
+  stroke-width: 1.2;
+  cursor: pointer;
+  transition: fill .15s ease, stroke .15s ease;
+}
+
+.carZone:hover,
+.carZone.active {
+  fill: rgba(79, 140, 255, .40);
+  stroke: rgba(79, 140, 255, .9);
+}
+
+.carLabel {
+  fill: rgba(234, 240, 255, .74);
+  font-size: 16px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.carLabel tspan {
+  fill: rgba(128, 175, 255, .95);
+  font-size: 13px;
+}
+
+.zoneLegend {
+  width: 100%;
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(79, 140, 255, .22);
+  border-radius: 12px;
+  background: rgba(79, 140, 255, .08);
+  padding: 10px;
+}
+
+.zoneLegend div {
+  display: grid;
+  gap: 2px;
+}
+
+.zoneLegend span {
+  color: rgba(234, 240, 255, .62);
+  font-size: 12px;
+}
+
+.results {
+  margin-top: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.resultCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 14px;
+  background: rgba(8, 12, 24, .28);
+  color: #eaf0ff;
+  cursor: pointer;
+}
+
+.resultCard.active,
+.resultCard:hover {
+  border-color: rgba(79, 140, 255, .65);
+  box-shadow: 0 0 0 2px rgba(79, 140, 255, .12) inset;
+}
+
+.resultCard span {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.resultCard small {
+  color: rgba(234, 240, 255, .62);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resultCard em {
+  align-self: start;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, .18);
+  color: #d9c8ff;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 8px;
+}
+
+.detailPane {
+  min-height: 620px;
+}
+
+.detailEmpty {
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: start;
+}
+
+.detailHeader h2 {
+  margin-top: 8px;
+  font-size: 32px;
+}
+
+.flagStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.flagStack span,
+.pillList span {
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 18px 0 14px;
+}
+
+.tabs button {
+  height: 34px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-color: rgba(79, 140, 255, .62);
+  background: rgba(79, 140, 255, .16);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.infoCard,
+.priceRow,
+.vehicleList div {
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 14px;
+  background: rgba(8, 12, 24, .26);
+  padding: 12px;
+}
+
+.infoCard.wide {
+  grid-column: 1 / -1;
+}
+
+.infoCard {
+  display: grid;
+  gap: 7px;
+}
+
+.infoCard span,
+.priceRow small,
+.vehicleList span {
+  color: rgba(234, 240, 255, .62);
+  font-size: 12px;
+}
+
+.infoCard strong {
+  line-height: 1.35;
+}
+
+.pillList,
+.tablePane,
+.vehicleList {
+  display: grid;
+  gap: 8px;
+}
+
+.pillList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sortButton {
+  width: fit-content;
+  justify-self: end;
+}
+
+.priceRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 12px;
+}
+
+.priceRow strong {
+  color: #8bb5ff;
+}
+
+.priceRow small {
+  grid-column: 1 / -1;
+}
+
+.vehicleList div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.empty {
+  border: 1px dashed rgba(255, 255, 255, .18);
+  border-radius: 14px;
+  background: rgba(8, 12, 24, .18);
+  color: rgba(234, 240, 255, .70);
+  padding: 14px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 980px) {
+  .appShell {
+    padding: 16px;
+  }
+
+  .hero,
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailPane {
+    min-height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .mainGrid {
+    grid-template-columns: minmax(420px, 0.75fr) minmax(0, 1.25fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .searchPanel,
+  .filters,
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .vehicleList div,
+  .detailHeader {
+    display: grid;
+  }
+}
